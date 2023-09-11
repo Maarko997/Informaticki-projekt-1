@@ -3,7 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Svijet sporta</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- FONT AWESOME ICONS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SVIJET SPORTA</title>
   </head>
-  <body></body>
+  <body>
+    <!--NAVIGACIJSKA TRAKA-->
+    <div class="text-center">
+      <h1 class="fw-bold my-3">SVIJET SPORTA</h1>
+    </div>
+
+    <nav
+      class="navbar navbar-expand bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="container">
+        <div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Naslovnica</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nogomet.html">Nogomet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kosarka.html">Košarka</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tenis.html">Tenis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="googleMaps.html">Google mape</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="prijava.html"
+                >Prijava</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section naslovna -->
+    <section class="container">
+        <hr />
+        <h3>Novosti iz SVIJETA SPORTA</h3>
+        <hr />
+        <div id="carouselExample" class="carousel slide mx-auto">
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/230910202647-05-us-open-mens-final-091023.jpg?c=16x9&q=h_438,w_780,c_fill" class="d-block w-100" alt="https://static.euronews.com/articles/stories/07/88/47/54/630x354_cmsv2_f35b1853-e12d-56f1-9863-93db8a2bd3f6-7884754.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.cnn.com/api/v1/images/stellar/prod/221219105607-messi-crowd-world-cup-121822.jpg?c=16x9&q=h_438,w_780,c_fill" class="d-block w-100" alt="https://static.euronews.com/articles/stories/07/88/47/54/630x354_cmsv2_f35b1853-e12d-56f1-9863-93db8a2bd3f6-7884754.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="https://static.euronews.com/articles/stories/07/88/47/54/630x354_cmsv2_f35b1853-e12d-56f1-9863-93db8a2bd3f6-7884754.jpg" class="d-block w-100" alt="https://static.euronews.com/articles/stories/07/88/47/54/630x354_cmsv2_f35b1853-e12d-56f1-9863-93db8a2bd3f6-7884754.jpg">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      
+
+      <div class="banner row justify-content-center my-5 p-2">
+        <div class="col-lg-8 text-center my-5">
+          <img
+            class="img-fluid"
+            src="https://static.euronews.com/articles/stories/07/83/60/56/773x435_cmsv2_097e019c-5439-530b-96e5-7ed6b7cbed36-7836056.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-4 text-start my-5">
+          <div>
+            <p>Nogomet</p>
+            <h2 class="fw-light">
+              Lionel Messi: Je li on najveći igrač svih vremena?
+            </h2>
+            <h5 class="fw-light">U partnerstvu s Media City Qatar. Nakon što je osvojio FIFA Svjetsko prvenstvo 2022., Lionel Messi započeo je novi izazov u MLS-u.</h5>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-space-between mt-5">
+        <div class="col-lg-4 ">
+            <div class="card" >
+                <iframe width="inherit" height="315" src="https://www.youtube.com/embed/_L9r3JY8XsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="fw-normal">'Dalić je mađioničar! Njegova uloga je podcijenjena, ali ubrzo će nas snaći problem'</h5>
+                </div>
+              </div>
+        </div class="col">
+        <div class="col-lg-4">
+            <div class="card" >
+                <iframe width="inherit" height="315" src="https://www.youtube.com/embed/9SLLbeSQfiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="fw-normal">'City je favorit, a Inter ima psihološku prednost. Ovo je glavna razlika između Haalanda i Mbappea'</h5>
+                </div>
+            </div>
+        </div class="col-lg-4">
+        <div class="col">
+            <div class="card">
+                <iframe width="inherit" height="315" src="https://www.youtube.com/embed/f3ACFXmCJYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="fw-normal">'U Hrvatsku ne bih uzeo nijednog igrača Nizozemske ni Španjolske. Van Dijk? Hrvat ipak radi razliku'</h2>
+                </div>
+              </div>
+        </div class="col">
+    </div>
+    </section>
+
+    <!-- Podnožje (footer) -->
+    <footer class="text-center text-white bg-dark py-5 mt-5">
+        <h2>SVIJET SPORTA</h2>
+        <div class="my-5">
+          <a
+            class="me-3 text-white"
+            href="https://www.facebook.com/fpmoz.ba/"
+            target="_blank"
+            ><i class="fa fa-facebook fa-2x"></i
+          ></a>
+          <a class="me-3 text-white" href="https://twitter.com/SVE_Mostar" target="_blank"
+            ><i class="fa fa-twitter fa-2x"></i
+          ></a>
+          <a
+            class="me-3 text-white"
+            href="https://www.instagram.com/fpmoz.mostar/?hl=hr"
+            target="_blank"
+            ><i class="fa fa-instagram fa-2x"></i
+          ></a>
+          <a href="https://www.youtube.com/watch?v=VS_WbUBkB88" target="_blank"
+            ><i class="fa fa-youtube fa-2x text-white"></i
+          ></a>
+        </div>
+        <p>Marko Benković © 2023</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

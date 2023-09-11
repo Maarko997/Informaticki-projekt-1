@@ -17,12 +17,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      #map {
-        height: 400px;
-        width: 100%;
-      }
-    </style>
     <title>SVIJET SPORTA</title>
   </head>
   <body>
@@ -51,12 +45,7 @@
               <a class="nav-link" href="tenis.html">Tenis</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="googleMaps.html"
-                >Google mape</a
-              >
+              <a class="nav-link" href="googleMaps.html">Google mape</a>
             </li>
           </ul>
         </div>
@@ -72,7 +61,33 @@
       </div>
     </nav>
 
-    <div id="map"></div>
+    <!-- PRIJAVA -->
+    <div id="prijava" class="text-center">
+      <form class="bg-white p-5">
+        <h1>Prijava</h1>
+        <hr />
+        <div class="mb-3">
+          <label class="form-label border-primary">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailAdresa"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Lozinka</label>
+          <input type="password" class="form-control" id="lozinka" />
+        </div>
+        <button
+          type="submit"
+          class="btn btn-warning text-white"
+          id="prijavaBtn"
+        >
+          Prijava
+        </button>
+      </form>
+    </div>
 
     <!-- Podnožje (footer) -->
     <footer class="text-center text-white bg-dark py-5">
@@ -102,29 +117,25 @@
       </div>
       <p>Marko Benković © 2023</p>
     </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb3s_RQPoC8qn3-ps-sCn5fdYSSZTesl4&callback=initMap"
-      async
-      defer
-    ></script>
     <script>
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: -34.397, lng: 150.644 },
-          zoom: 8,
-        });
+      const email = document.getElementById("emailAdresa"); //dohvaćanje elementa po id-u
+      const lozinka = document.getElementById("lozinka"); //dohvaćanje elementa po id-u
 
-        var marker = new google.maps.Marker({
-          position: { lat: -34.397, lng: 150.644 },
-          map: map,
-          title: "Marker Title",
-        });
-      }
+      // dodavanje funkcije za klik na gumb prijavaBtn, na klik se dohvaćaju email i lozinka te ako su input polja prazna pokrece se alert sa porukom "Unesite sva polja!!" . Ukoliko to nije slucaj onda alert daje poruku "Uspješno ste se prijavili!" i u konzolu ispisuje vrijednosti emaila i lozinke.
+      prijavaBtn.addEventListener("click", () => {
+        if (email.value === "" || lozinka.value === "") {
+          alert("Unesite sva polja!!");
+        } else {
+          alert("Uspješno ste se prijavili!");
+          console.log("Email:" + email.value, "Lozinka:" + lozinka.value);
+        }
+      });
     </script>
   </body>
 </html>

@@ -1,0 +1,24 @@
+#carouselExample {
+  width: 85%;
+}
+
+.banner {
+  background-color: #dcdcdc;
+}
+
+form {
+  width: 500px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+#prijava {
+  background-image: url("/images/pozadina.jpg");
+  padding: 50px;
+}
+
+.rezultati {
+  height: 200px;
+  background-image: url("https://img.freepik.com/premium-vector/abstract-sports-background-with-motion-elements-with-beautiful-dynamic-lighting-effects_29865-3620.jpg");
+  background-size: cover;
+}
